@@ -1,0 +1,2 @@
+﻿Godai.FinalFantasyXIV is a .NET library for interacting with Final Fantasy XIV.
+Initially, the focus will be on reading chatlog data from FFXIV's memory.
