@@ -66,11 +66,6 @@ namespace Godai.FinalFantasyXIV
                 throw new ArgumentNullException("process");
             }
 
-            if (address == IntPtr.Zero)
-            {
-                throw new ArgumentException("Invalid address", "address");
-            }
-
             if (numBytesToRead == 0)
             {
                 return 0;

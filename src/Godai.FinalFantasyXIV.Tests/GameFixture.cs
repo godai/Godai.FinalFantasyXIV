@@ -24,13 +24,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using log4net;
+using NUnit.Framework;
 
 namespace Godai.FinalFantasyXIV.Tests
 {
+    [TestFixture]
     public class GameFixture
     {
         private static readonly ILog Log = LogManager.GetLogger(typeof(GameFixture));
 
+        [Test]
+        public void GetProcess()
+        {
+            var process = Game.GetProcesses().FirstOrDefault();
+            Assert.That(process != null);
+        }
 
+        [Test]
+        public void ReadMemory()
+        {
+            var process = Game.GetProcesses().FirstOrDefault();
+            Assert.That(process != null);
+
+            if (process.Modules.Count == 0)
+            {
+                Assert.Fail();
+            }
+
+            Log.InfoFormat("BaseAddress: {0}", process.MainModule.BaseAddress.ToInt32().ToString("X8"));
+
+            var data = new byte[32];
+
+            Assert.That(Game.ReadMemory(process, process.MainModule.BaseAddress, 32, data) == 32);
+
+            foreach (var b in data)
+            {
+                Log.Info(b.ToString("X2"));
+            }
+        }
     }
 }
