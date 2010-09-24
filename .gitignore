@@ -2,3 +2,6 @@ src/Godai.FinalFantasyXIV/_ReSharper.Godai.FinalFantasyXIV
 src/Godai.FinalFantasyXIV/bin
 src/Godai.FinalFantasyXIV/obj
 src/Godai.FinalFantasyXIV/Godai.FinalFantasyXIV.suo
+src/Godai.FinalFantasyXIV.Tests/bin
+src/Godai.FinalFantasyXIV.Tests/obj
+/src/Godai.FinalFantasyXIV/Godai.FinalFantasyXIV.5.1.ReSharper.user
