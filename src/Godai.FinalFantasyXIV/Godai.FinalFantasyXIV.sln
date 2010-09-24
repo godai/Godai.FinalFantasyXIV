@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Godai.FinalFantasyXIV", "Godai.FinalFantasyXIV.csproj", "{0E172892-9263-43E4-AC36-738C9B3BD1FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E172892-9263-43E4-AC36-738C9B3BD1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E172892-9263-43E4-AC36-738C9B3BD1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E172892-9263-43E4-AC36-738C9B3BD1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E172892-9263-43E4-AC36-738C9B3BD1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
